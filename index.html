@@ -1,1 +1,162 @@
-Hello!`
+<html>
+<head>
+<title>AP</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+  }
+  #pieceDescription {
+    position: absolute;
+    margin: auto;
+    width: 50%;
+    height: 15%;
+    border: 2px solid grey;
+    color: lightgray;
+    padding: 10px;
+    top:80%;
+    right:25%;
+    z-index: +1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #statement {
+    position: absolute;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border: 2px solid grey;
+    color:lightgray;
+    padding: 10px;
+    top:25%;
+    right:25%;
+    z-index: +1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background:rgba(30,30,30,0.75);
+    font-size: larger;
+    text-align: center;
+    visibility: hidden;
+  }
+
+  #socialMediaLinks {
+    position: absolute;
+    margin: auto;
+    width: 65px;
+    height: 65px;
+    border: 2px solid lightgray;
+    color: lightgray;
+    padding: 10px;
+    top:5%;
+    left:5%;
+    z-index: +1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    cursor: pointer;
+    font-size: medium;
+    text-align: center;
+  }
+
+  #socialMediaLinks:hover {
+    background-color: lightslategray;
+  }
+
+  .plainLink:link {
+    color: lightgray;
+    text-decoration: none;
+  }
+  .plainLink:active {
+    color: lightgray;
+    text-decoration: none;
+  }
+  .plainLink:visited {
+    color: lightgray;
+    text-decoration: none;
+  }
+  
+  #statementButton {
+    position: absolute;
+    margin: auto;
+    width: 65px;
+    height: 65px;
+    border: 2px solid lightgray;
+    color: lightgray;
+    padding: 10px;
+    top:5%;
+    right:5%;
+    z-index: +1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smallest;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: medium;
+    text-align: center;
+  }
+
+  #statementButton:hover {
+    background-color: lightslategray;
+  }
+  #closeButton {
+
+    font-size: xxx-large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #showTitle {
+    position: absolute;
+    margin: auto;
+    width: 50%;
+    height: 15%;
+    color: lightgray;
+    padding: 10px;
+    top:5%;
+    right:25%;
+    z-index: +1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  </style>
+</head>
+<body style="height: 100%; margin: 0;"> 
+
+  <div > 
+
+    <div id='statementButton' class="unselectable"> Statement  </div>
+    <div id='socialMediaLinks' class="unselectable"> <a class="plainLink" target="_blank" href="https://www.instagram.com/micahletishia.art/" > <i class="fa fa-instagram plainLink" style="font-size:40px"></i> </a> </div>
+    
+    <div id='pieceDescription' class="unselectable"> </div>
+    <div id='statement' class="unselectable">
+       Micah Morgan b. 1987, Hyattsville <br/>
+      Micah Morgan's work is abstract and symmetrical. Her digital watercolor technique balances traditional and new media.<br/>
+      (Sound of) The Return is a grateful meditation of thanksgiving and praise for returning to the city of her first home.<br/>
+     </div>
+    <div id='showTitle' class="unselectable">Bleep </div>
+  <canvas style="position:absolute; width:100%; height:100%;" id="canvas" width="640" height="480">
+  </canvas>
+  </div>
+  <script src="/dist/main.js" ></script>
+  
+</body>
+
+</body></html>
