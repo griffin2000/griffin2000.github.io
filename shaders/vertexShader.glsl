@@ -1,4 +1,4 @@
-precision mediump float; 
+precision highp float; 
 
 
 DEFINE_VERTEX_SHADER_INPUT(position, vec3, 0);
