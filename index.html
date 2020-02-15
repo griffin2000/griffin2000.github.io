@@ -3,6 +3,22 @@
 <title>AP</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  .defaultText {
+    font-size: 110%;
+  }
+  .titleText {
+    font-size: 150%;
+  }
+  .headingText {
+    font-size: 120%;
+  }
+  .detailsText {
+    font-size: 90%;
+  }
+  .iconText {
+    font-size: 180%;
+  }
+
   .unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -11,7 +27,7 @@
     user-select: none;
 
   }
-  #pieceDescription {
+  #pieceDetails {
     position: absolute;
     margin: auto;
     width: 50%;
@@ -27,6 +43,10 @@
     align-items: center;
     visibility: hidden;
     font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    line-height: 140%;
   }
   
   #statement {
@@ -45,7 +65,6 @@
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background:rgba(30,30,30,0.75);
-    font-size: larger;
     text-align: center;
     visibility: hidden;
   }
@@ -64,11 +83,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: small;
     font-family: Arial, Helvetica, sans-serif;
     
     cursor: pointer;
-    font-size: medium;
     text-align: center;
   }
 
@@ -103,10 +120,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: smallest;
     font-family: Arial, Helvetica, sans-serif;
     
-    font-size: medium;
     text-align: center;
   }
 
@@ -115,7 +130,6 @@
   }
   #closeButton {
 
-    font-size: xxx-large;
     font-family: Arial, Helvetica, sans-serif;
   }
   #showTitle {
@@ -131,7 +145,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -142,16 +155,23 @@
 
   <div > 
 
-    <div id='statementButton' class="unselectable"> <span id="closeButton"> <i class="fa fa-align-justify"></i> <span>  </div>
-    <div id='socialMediaLinks' class="unselectable"> <a class="plainLink" target="_blank" href="https://www.instagram.com/micahletishia.art/" > <i class="fa fa-instagram plainLink" style="font-size:40px"></i> </a> </div>
+    <div id='statementButton' class="unselectable iconText"> <span id="closeButton"> <i class="fa fa-align-justify"></i> <span>  </div>
+    <div id='socialMediaLinks' class="unselectable iconText"> <a class="plainLink" target="_blank" href="https://www.instagram.com/micahletishia.art/" > <i class="fa fa-instagram plainLink"></i> </a> </div>
     
-    <div id='pieceDescription' class="unselectable"> </div>
-    <div id='statement' class="unselectable">
+    <div id='pieceDetails' class="unselectable">
+      <div id='pieceTitle' class="headingText" > </div> 
+      <div id='pieceYear' class="detailsText"> </div>  
+      <div id='pieceDescription'  class="detailsText"> </div> 
+      <div id='pieceDimensions'  class="detailsText"> </div>  
+      <div id='piecePrice'  class="detailsText"> </div> 
+    </div>
+
+    <div id='statement' class="unselectable defaultText">
        Micah Morgan b. 1987, Hyattsville <br/>
       Micah Morgan's work is abstract and symmetrical. Her digital watercolor technique balances traditional and new media.<br/>
       (Sound of) The Return is a grateful meditation of thanksgiving and praise for returning to the city of her first home.<br/>
      </div>
-    <div id='showTitle' class="unselectable">Bleep </div>
+    <div id='showTitle' class="unselectable titleText">Bleep </div>
   <canvas style="position:absolute; width:100%; height:100%;" id="canvas" width="640" height="480">
   </canvas>
   </div>
