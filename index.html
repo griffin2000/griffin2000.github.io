@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>AP</title>
+<title>Micah Morgan</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   .defaultText {
@@ -10,7 +10,8 @@
     font-size: 150%;
   }
   .headingText {
-    font-size: 120%;
+    font-size: 125%;
+    font-weight: bold;
   }
   .detailsText {
     font-size: 90%;
@@ -40,7 +41,7 @@
     z-index: +1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     visibility: hidden;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -67,6 +68,8 @@
     background:rgba(30,30,30,0.75);
     text-align: center;
     visibility: hidden;
+    flex-direction: column;
+    line-height: 140%;
   }
 
   #socialMediaLinks {
@@ -161,13 +164,14 @@
     <div id='pieceDetails' class="unselectable">
       <div id='pieceTitle' class="headingText" > </div> 
       <div id='pieceYear' class="detailsText"> </div>  
-      <div id='pieceDescription'  class="detailsText"> </div> 
       <div id='pieceDimensions'  class="detailsText"> </div>  
+      <div id='pieceDescription'  class="detailsText"> </div> 
       <div id='piecePrice'  class="detailsText"> </div> 
     </div>
 
     <div id='statement' class="unselectable defaultText">
-       Micah Morgan b. 1987, Hyattsville <br/>
+       <div><b>Micah Morgan</b> b. 1987, Hyattsville </div>
+       <br/>
       Micah Morgan's work is abstract and symmetrical. Her digital watercolor technique balances traditional and new media.<br/>
       (Sound of) The Return is a grateful meditation of thanksgiving and praise for returning to the city of her first home.<br/>
      </div>
